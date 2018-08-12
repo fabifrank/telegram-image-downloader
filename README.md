@@ -33,3 +33,5 @@ source credentials.env
 ```
 docker run -v $(pwd)/contents:/contents -it telegram-image-downloader /bin/bash -c "python /contents/download.py $TELEGRAM_API_ID $TELEGRAM_API_HASH $TELEGRAM_PHONE_NUMBER $TELEGRAM_DOWNLOAD_FOLDER \"$TELEGRAM_CHATS\""
 ```
+
+You will be prompted to enter the PIN you received in telegram (another device/app) and password (if enabled). After that the download starts.
